@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gradus content</title>
+<style>
+  :root{
+    --bg:#FFFFFF; --card:#EFEFEF; --green:#4F6F3E; --gold:#B8843A;
+    --text:#2B2418; --muted:#6F6658;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       line-height:1.5;padding:2.5rem 1.25rem;display:flex;justify-content:center}
+  main{width:100%;max-width:40rem}
+  h1{font-family:Georgia,"Times New Roman",serif;color:var(--green);
+     font-size:2.25rem;margin:0 0 .25rem}
+  .sub{color:var(--muted);margin:0 0 2rem}
+  .card{background:var(--card);border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0}
+  .card a{color:var(--gold);text-decoration:none;font-weight:600;word-break:break-all}
+  .card a:hover{text-decoration:underline}
+  .label{display:block;color:var(--muted);font-size:.85rem;margin-bottom:.2rem}
+  footer{color:var(--muted);font-size:.85rem;margin-top:2rem}
+</style>
+</head>
+<body>
+<main>
+  <h1>Gradus</h1>
+  <p class="sub">Daily puzzle content endpoint. This page serves data for the app; it is not the game.</p>
+
+  <div class="card">
+    <span class="label">Active feed (index-keyed)</span>
+    <a href="./puzzles-active.json">puzzles-active.json</a>
+  </div>
+  <div class="card">
+    <span class="label">Config (launch date and version)</span>
+    <a href="./config.json">config.json</a>
+  </div>
+
+  <footer>
+    The app reads <code>config.json</code> for the launch date, computes
+    <code>index = today &minus; launchDate</code> in days, then shows the matching
+    puzzle from <code>puzzles-active.json</code>.
+  </footer>
+</main>
+</body>
+</html>
