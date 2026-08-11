@@ -27,16 +27,16 @@
     "index": 1,
     "id": "2026-08-12-tornado-strength-enhanced",
     "schemaVersion": 1,
-    "theme": "Tornado strength (Enhanced Fujita scale)",
+    "theme": "Tornado damage by severity",
     "lowLabel": "Weakest",
     "highLabel": "Strongest",
     "items": [
-      "EF0",
-      "EF1",
-      "EF2",
-      "EF3",
-      "EF4",
-      "EF5"
+      "Broken branches",
+      "Roofs torn off houses",
+      "Cars overturned",
+      "Houses levelled",
+      "Reinforced structures damaged",
+      "Complete destruction"
     ],
     "category": "science",
     "source": "NOAA National Weather Service, Enhanced Fujita scale",
