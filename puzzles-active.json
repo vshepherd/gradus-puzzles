@@ -25,11 +25,11 @@
   },
   {
     "index": 1,
-    "id": "2026-08-12-tornado-strength-enhanced",
+    "id": "2026-08-12-tornado-damage-severity",
     "schemaVersion": 1,
     "theme": "Tornado damage by severity",
-    "lowLabel": "Weakest",
-    "highLabel": "Strongest",
+    "lowLabel": "Least Damage",
+    "highLabel": "Most Damage",
     "items": [
       "Broken branches",
       "Roofs torn off houses",
@@ -265,27 +265,27 @@
   },
   {
     "index": 11,
-    "id": "2026-08-22-square-numbers",
+    "id": "2026-08-22-fractions-by-size",
     "schemaVersion": 1,
-    "theme": "Square numbers",
+    "theme": "Fractions by Size",
     "lowLabel": "Smallest",
     "highLabel": "Largest",
     "items": [
-      "1",
-      "4",
-      "9",
-      "16",
-      "25",
-      "36"
+      "1/8",
+      "1/6",
+      "1/4",
+      "1/3",
+      "1/2",
+      "2/3"
     ],
     "category": "mathematics",
     "source": "Standard mathematics",
-    "sourceUrl": "https://oeis.org/A000290",
-    "verifiedBy": "Claude (draft, pending review)",
-    "verifiedDate": "",
+    "sourceUrl": "https://www.mathsisfun.com/fractions.html",
+    "verifiedBy": "VS",
+    "verifiedDate": "2026-08-11",
     "publishDate": "2026-08-22",
-    "status": "draft",
-    "notes": "The squares of 1 through 6."
+    "status": "approved",
+    "notes": "Fractions by size."
   },
   {
     "index": 12,
