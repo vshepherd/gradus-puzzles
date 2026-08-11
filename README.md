@@ -77,14 +77,6 @@ built feed:
 5. The change goes live within about ten minutes (GitHub Pages serves through a
    CDN that caches for roughly that long).
 
-## Reusing an earlier puzzle
-
-The 71 earlier puzzles live in `puzzles-reserve.json` (kept private). To bring one
-back, copy its row into the spreadsheet with a `Publish date` on or after the launch
-date, in the schedule slot you want, then rebuild. Because the feed is ordered by a
-running index rather than a fixed calendar date, inserting one only shifts the
-indexes that come after it.
-
 ## Keep private (do not commit to this public repo)
 
 - `Gradus_v2_puzzles-verified.xlsx` (the single source of truth)
@@ -93,15 +85,6 @@ indexes that come after it.
 
 `.gitignore` already excludes `*.xlsx` and `puzzles-reserve.json` so they will not be
 added by accident if you run the converter inside the repo folder.
-
-## Important: upcoming answers are public
-
-Anyone can open `puzzles-active.json` and read every upcoming puzzle, including the
-correct order. This is normal for daily games whose content is fetched by the client
-(this is how Wordle worked). If you would rather players could not see future
-answers, the feed needs to publish only the current and past days, refreshed on a
-schedule. That requires a small scheduled build (for example a GitHub Actions job).
-Ask if you want that added.
 
 ## Caching notes
 
