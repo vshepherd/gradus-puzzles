@@ -5,3 +5,9 @@
   "updated": "2026-08-11",
   "note": "App: index = (today - launchDate) in days; show puzzle with matching index in puzzles-active.json"
 }
+{
+  "launchDate": "2026-08-11",
+  "version": 2,
+  "count": 15,
+  "updated": "2026-08-12"
+}
